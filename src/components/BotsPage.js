@@ -1,6 +1,6 @@
-import React from "react";
-import YourBotArmy from "./YourBotArmy";
-import BotCollection from "./BotCollection";
+import React from 'react'
+import YourBotArmy from './YourBotArmy'
+import BotCollection from './BotCollection'
 
 function BotsPage() {
   //start here with your code for step one
@@ -13,4 +13,4 @@ function BotsPage() {
   )
 }
 
-export default BotsPage;
+export default BotsPage
