@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import BotCollection from './BotCollection'
-import BotArmy from './YourBotArmy'
+import YourBotArmy from './YourBotArmy'
 import DetailedBots from './DetailedBots'
 
 class BotsPage extends Component {
@@ -78,7 +78,7 @@ class BotsPage extends Component {
 
     return (
       <div>
-        <BotArmy
+        <YourBotArmy
           bots={botArmy}
           action={this.removeFromArmy}
           removeCard={this.removeBotPermanently}
