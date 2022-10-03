@@ -1,10 +1,12 @@
 import React from 'react'
-import BotsPage from './BotsPage'
+// import BotsPage from './BotsPage'
+import BotsPageClass from './BotsPageClass'
 
 function App() {
   return (
     <div className='App'>
-      <BotsPage />
+      {/* <BotsPage /> */}
+      <BotsPageClass />
     </div>
   )
 }
