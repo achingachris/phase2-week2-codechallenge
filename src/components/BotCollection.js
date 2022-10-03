@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import BotCard from './BotCard'
 
 function BotCollection() {
   const [bots, setBots] = useState([])
@@ -7,12 +8,16 @@ function BotCollection() {
   useEffect(() => {
     fetch(API_URL)
       .then((res) => res.json())
-      .then((data) => console.log(data))
+      .then((data) => setBots(data))
   }, [])
 
   return (
     <div className='ui four column grid'>
-      <div className='row'></div>
+      <div className='row'>
+        {bots.map((data) => (
+          <BotCard key={data.id} bot={data} />
+        ))}
+      </div>
     </div>
   )
 }
